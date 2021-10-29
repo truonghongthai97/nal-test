@@ -1,6 +1,6 @@
-import * as S from "./style";
-import { ReactNode } from "react";
-import { MainContainer } from "src/components/Container/style";
+import * as S from './style';
+import { ReactNode } from 'react';
+import { MainContainer } from 'src/components/Container/style';
 
 interface IProps {
   children: ReactNode;

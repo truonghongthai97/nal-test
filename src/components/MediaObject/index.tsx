@@ -1,8 +1,8 @@
-import { useMemo } from "react";
-import * as S from "./style";
-import { IProps } from "./type";
+import { useMemo } from 'react';
+import * as S from './style';
+import { IProps } from './type';
 
-const MediaObject = ({ media, alt = "image" }: IProps) => {
+const MediaObject = ({ className, media, alt = 'image' }: IProps) => {
   const createdAt = useMemo(() => {
     try {
       return new Date(media.createdAt).toLocaleString();
@@ -12,7 +12,7 @@ const MediaObject = ({ media, alt = "image" }: IProps) => {
   }, [media.createdAt]);
 
   return (
-    <S.Wrapper>
+    <S.Wrapper className={className}>
       <S.ImageWrapper>
         <S.Image src={media.image} alt={alt} />
       </S.ImageWrapper>

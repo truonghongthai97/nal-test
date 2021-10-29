@@ -1,8 +1,8 @@
-import BaseLayout from "./components/Layouts/BaseLayout";
-import ThemeProvider from "src/providers/Theme";
+import BaseLayout from './components/Layouts/BaseLayout';
+import ThemeProvider from 'src/providers/Theme';
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import routes from "./routes";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import routes from './routes';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
-import global from "./global";
+import global from './global';
 
 export const colors = {
-  primary: "red",
+  primary: 'red',
 } as const;
 
 // @ts-ignore

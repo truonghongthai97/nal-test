@@ -1,9 +1,9 @@
-import BlogList from "src/pages/BlogList";
-import BlogDetail from "src/pages/BlogDetail";
+import BlogList from 'src/pages/BlogList';
+import BlogDetail from 'src/pages/BlogDetail';
 
 export const paths = {
-  blogList: "/blogs",
-  blogDetail: "/blogs/:id",
+  blogList: '/blogs',
+  blogDetail: '/blogs/:id',
 };
 
 const routes = [

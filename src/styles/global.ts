@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import reset from "./reset";
-import base from "./base";
+import { createGlobalStyle } from 'styled-components';
+import reset from './reset';
+import base from './base';
 
 // @ts-ignore
 export default createGlobalStyle`
