@@ -2,14 +2,13 @@ import { useMemo } from 'react';
 import * as S from './style';
 import { IProps } from './type';
 
+import formatDate from 'src/utils/formatDate';
+
 const MediaObject = ({ className, media, alt = 'image' }: IProps) => {
-  const createdAt = useMemo(() => {
-    try {
-      return new Date(media.createdAt).toLocaleString();
-    } catch {
-      return null;
-    }
-  }, [media.createdAt]);
+  const createdAt = useMemo(
+    () => formatDate(media.createdAt),
+    [media.createdAt],
+  );
 
   return (
     <S.Wrapper className={className}>
